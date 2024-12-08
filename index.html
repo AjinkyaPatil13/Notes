@@ -1,103 +1,66 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" style="font-family: sans-serif;">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Notes</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/css/uikit.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <style>
-        .responsive {
-            width: 100%;
-            height: auto;
-        }
+        
     </style>
 
 </head>
 
 <body>
-    <!-- As a link -->
-    <img src="/media/logo.jpg" id="navimg" class=responsive height=100px width=1500px>
-    <nav class="navbar" style="background-color: white;">
-        <div class="container-fluid">
-            <span class="navbar-brand mb-0">Notes</span>
+    <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+        <div class="uk-navbar-left uk-flex-left">
+            <a class="uk-logo" href="" style="width: 18%;">
+                <img src="/media/logo.png" style="margin-left: 17px; margin-top: 12px; background-color: transparent;" alt="logo">
+            </a>
+    
+            <ul class="uk-navbar-nav uk-margin-left">
+                <li class="uk-active" style="font-family: sans-serif;"><a href="#">Home</a></li>
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a href="">Department<span uk-navbar-parent-icon></span></a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="#">First Year</a></li>
+                                <li><a href="#">Second Year</a></li>
+                                <li><a href="#">Third Year</a></li>
+                                <li><a href="#">Fourth Year</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                
+                <li style="font-family: sans-serif;"><a href="#">About</a></li>
+            </ul>
         </div>
     </nav>
 
-    <!-- As a heading -->
-    <nav class="navbar" style="background-color: white;">
-        <div class="container-fluid">
-            <span class="navbar-brand mb-0">Subjects</span>
-        </div>
-    </nav>
+    <h2 class="uk-heading-line uk-text-center" style="letter-spacing: 1px; margin-top: 20px; margin-bottom: 0; font-family: sans-serif;"><span>First Year</span></h2>
 
-
-
-
-
-    <ul class="list-group list-group-flush">
-        <a href="https://drive.google.com/drive/folders/1t-TEyATm4Ot3ybtfiO9FFTU_6zrLa1BZ?usp=drive_link"
-            class="link-danger">
-            <li class="list-group-item link-danger">Matrices and Differential Calculus</li>
-        </a>
-
-        <a href="https://drive.google.com/drive/folders/1piksuXt2uLBQljPZk1frki-jkojVWtxI?usp=drive_link"
-            class="link-danger">
-            <li class="list-group-item link-danger">Linear Algebra and Statistics</li>
-        </a>
-
-        <a href="https://drive.google.com/drive/folders/19-7ADVVpMYlxDnJum8eQbRI9aHcksAAe?usp=drive_link"
-            class="link-danger">
-            <li class="list-group-item link-danger">Digital Logic and Design</li>
-        </a>
-
-        <a href="https://drive.google.com/drive/folders/1dNHlbzoHJnItBhG7GFmQlrAJGGd5GTDB?usp=drive_link"
-            class="link-danger">
-            <li class="list-group-item link-danger">Environmental Chemistry</li>
-        </a>
-
-        <a href="https://drive.google.com/drive/folders/1UtGylATAduhP6AULiiAbyBdbCawBajnN?usp=drive_link"
-            class="link-danger">
-            <li class="list-group-item link-danger">Basic Electrical Engineering</li>
-        </a>
-
-        <a href="https://drive.google.com/drive/folders/1K1cL8MWfUN0iVuQrFJuW4bYY87uEBKKX?usp=drive_link"
-            class="link-danger">
-            <li class="list-group-item link-danger">Integral Calculus and Differential Equations</li>
-        </a>
-
-        <a href="https://drive.google.com/drive/folders/1aZSv7-wNynm_GU5GpJ42S5FqW95gkQZe?usp=drive_link"
-            class="link-danger">
-            <li class="list-group-item link-danger">Engineering Physics</li>
-        </a>
-
-        <a href="https://drive.google.com/drive/folders/1iUAE8DFrqi9yEEPxWGd2bkZgtVjDLbMe?usp=drive_link"
-            class="link-danger">
-            <li class="list-group-item link-danger">Computer Fundamentals and Troubleshooting</li>
-        </a>
-
-        <a href="https://drive.google.com/drive/folders/1gK0w3r4JBttxmspIAyt4xcm9rxSDqWjy?usp=drive_link"
-            class="link-danger">
-            <li class="list-group-item link-danger">Programming for Problem Solving</li>
-        </a>
-
-
+    <ul class="uk-list uk-list-divider" style="margin-left: 17px;">
+        <li><a href="https://drive.google.com/drive/folders/1t-TEyATm4Ot3ybtfiO9FFTU_6zrLa1BZ?usp=drive_link" class="uk-link-text" style="color: #7A00E6;">Matrices and Differential Calculus</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1piksuXt2uLBQljPZk1frki-jkojVWtxI?usp=drive_link" class="uk-link-text" style="color: #7A00E6;">Linear Algebra and Statistics</a></li>
+        <li><a href="https://drive.google.com/drive/folders/19-7ADVVpMYlxDnJum8eQbRI9aHcksAAe?usp=drive_link" class="uk-link-text" style="color: #7A00E6;">Digital Logic and Design</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1dNHlbzoHJnItBhG7GFmQlrAJGGd5GTDB?usp=drive_link" class="uk-link-text" style="color: #7A00E6;">Environmental Chemistry</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1UtGylATAduhP6AULiiAbyBdbCawBajnN?usp=drive_link" class="uk-link-text" style="color: #7A00E6;">Basic Electrical Engineering</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1K1cL8MWfUN0iVuQrFJuW4bYY87uEBKKX?usp=drive_link" class="uk-link-text" style="color: #7A00E6;">Integral Calculus and Differential Equations</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1aZSv7-wNynm_GU5GpJ42S5FqW95gkQZe?usp=drive_link" class="uk-link-text" style="color: #7A00E6;">Engineering Physics</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1iUAE8DFrqi9yEEPxWGd2bkZgtVjDLbMe?usp=drive_link" class="uk-link-text" style="color: #7A00E6;">Computer Fundamentals and Troubleshooting</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1gK0w3r4JBttxmspIAyt4xcm9rxSDqWjy?usp=drive_link" class="uk-link-text" style="color: #7A00E6;">Programming for Problem Solving</a></li>
     </ul>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
 
-    <!-- ---------------------------------------------------------------------------------------------------- -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
-    </script>
+    
+   
 </body>
 
 </html>
