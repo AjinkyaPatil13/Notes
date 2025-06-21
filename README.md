@@ -36,7 +36,7 @@ As a student, I noticed many of my peers struggling to find reliable and organiz
 ## 📸 Screenshot
 
 <!-- Replace the link below with the actual screenshot link -->
-![Homepage Screenshot](https://drive.google.com/file/d/1QHEWoaP17qLS5PwBcDNeOXlcuuCv31_W/view?usp=drive_link)
+![Homepage Screenshot](https://drive.google.com/file/d/1QHEWoaP17qLS5PwBcDNeOXlcuuCv31_W/view?usp=sharing)
 
 ---
 
